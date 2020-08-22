@@ -1,20 +1,21 @@
-// LEDs for hours
-const int led13 = 13;
-const int led12 = 12;
-const int led11 = 11;
-const int led10 = 10;
-const int led9 = 9;
+// Buttons
+const int setButton = 1;
+const int changeButton = 2;
 
 // LEDs for minutes
-const int led8 = 8;
-const int led7 = 7;
-const int led6 = 6;
-const int led5 = 5;
-const int led4 = 4;
 const int led3 = 3;
+const int led4 = 4;
+const int led5 = 5;
+const int led6 = 6;
+const int led7 = 7;
+const int led8 = 8;
 
-const int changeButton = 2;
-const int setButton = 1;
+// LEDs for hours
+const int led9 = 9;
+const int led10 = 10;
+const int led11 = 11;
+const int led12 = 12;
+const int led13 = 13;
 
 bool setButtonLow = true;
 bool changeButtonLow = true;
@@ -25,13 +26,14 @@ bool inSetMinuteMode = false;
 int hour = 0;
 
 void setup() {
-  pinMode(led13, OUTPUT);
-  pinMode(led12, OUTPUT);
-  pinMode(led11, OUTPUT);
-  pinMode(led10, OUTPUT);
-  pinMode(led9, OUTPUT);
   pinMode(setButton, INPUT);
   pinMode(changeButton, INPUT);
+
+  pinMode(led9, OUTPUT);
+  pinMode(led10, OUTPUT);
+  pinMode(led11, OUTPUT);
+  pinMode(led12, OUTPUT);
+  pinMode(led13, OUTPUT);
 }
 
 void loop() {
